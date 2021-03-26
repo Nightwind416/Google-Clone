@@ -2,20 +2,36 @@
 <html>
   <head>
   <style>
-    body {
-      background-color: ;
+    .logo {
+      margin: 100px 5% 10px 5%;
+      padding: 10px;
+      text-align: center;
     }
-    h1 {
-      color: ;
+    .search {
+      margin: 10px 10px 10px 10px;
+      padding: 10px;
+      text-align: center;
     }
-    <title>Google Search</title>
+    .button {
+      margin: 10px 10px 10px 10px;
+      padding: 10px;
+      text-align: center;
+    }
   </style>
+  <title>Google Search</title>
   </head>
-
   <body>
-    <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    <p>search bar</p>
-    <input type="button" value="Search!" id="search-button" name="search-button">
-    <input type="button" value="I'm Feeling Lucky!" id="lucky-button" name="lucky-button">
+    <div class="logo">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>
+    <div class="search">
+      <form action="/action_page.php">
+        <input type="text" id="searchbar" name="search" placeholder="Search">
+      </form>
+    </div>
+    <div class="button">
+      <input type="button" value="Search!" id="search-button" name="search-button">
+      <input type="button" value="I'm Feeling Lucky!" id="lucky-button" name="lucky-button">    
+    </div>
   </body>
 </html>
